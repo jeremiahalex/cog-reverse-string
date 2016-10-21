@@ -1,11 +1,11 @@
 const app = require('express')()
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const package = require('./package.json')
+const packageJson = require('./package.json')
 const cogMeta = {
-  name: package.name,
-  description: package.description,
-  version: package.version
+  name: packageJson.name,
+  description: packageJson.description,
+  version: packageJson.version
 }
 
 app.use(cors())
